@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Echo Byte Games</title>
+  <meta name="description" content="Get in touch with Echo Byte Games. Questions, feedback and collaborations welcome.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Echo Byte Games home">
+        <img class="brand__icon" src="images/logo-gamepad.svg" alt="" width="44" height="33">
+        <span class="brand__text">ECHO BYTE<br><span>GAMES</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <ul class="nav-links" id="primary-nav">
+        <li><a class="nav-link" href="index.html">HOME</a></li>
+        <li><a class="nav-link" href="games.html">GAMES</a></li>
+        <li><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li><a class="nav-link" href="privacy.html">PRIVACY</a></li>
+        <li><a class="nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">PLAYER ONE, REPORTING IN</span>
+        <h1 class="page-hero__title">GET IN <span>TOUCH</span></h1>
+        <p class="page-hero__intro">Feedback, questions or a big idea? Send us a message — we read every one.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <div class="panel reveal">
+          <h2 class="panel__title">SEND A MESSAGE</h2>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="name">YOUR NAME</label>
+              <input class="form-control" id="name" name="name" type="text" placeholder="Player One" autocomplete="name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">YOUR EMAIL</label>
+              <input class="form-control" id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">SUBJECT</label>
+              <input class="form-control" id="subject" name="subject" type="text" placeholder="What's on your mind?">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">MESSAGE</label>
+              <textarea class="form-control" id="message" name="message" placeholder="Tell us more..." required></textarea>
+            </div>
+            <button class="btn" type="submit">SEND MESSAGE</button>
+            <p class="form-note">This opens your email app with the message ready to send. No account needed.</p>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="contact-aside reveal">
+          <div class="panel contact-card">
+            <h2 class="panel__title">EMAIL US DIRECTLY</h2>
+            <p>Prefer a straightforward email? We are right here:</p>
+            <a class="email-link" href="mailto:echobytegames01@gmail.com">echobytegames01@gmail.com</a><br>
+            <button class="btn btn--ghost btn--small copy-btn" id="copy-email" type="button">COPY EMAIL</button>
+            <p class="form-status" id="copy-status" role="status" aria-live="polite"></p>
+          </div>
+
+          <div class="panel contact-card">
+            <h2 class="panel__title">STUDIO STATUS</h2>
+            <p>Currently building new worlds and open to collaborations.</p>
+            <div class="status-line">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Open for new ideas</span>
+            </div>
+            <div class="status-line">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Usually replies within a few days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="index.html" aria-label="Echo Byte Games home">
+            <img class="brand__icon" src="images/logo-gamepad.svg" alt="" width="44" height="33">
+            <span class="brand__text">ECHO BYTE<br><span>GAMES</span></span>
+          </a>
+          <p>Indie games built with heart, pixels and a healthy dose of late-night coffee.</p>
+        </div>
+        <div>
+          <h3 class="footer__heading">EXPLORE</h3>
+          <ul class="footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__heading">MORE</h3>
+          <ul class="footer__list">
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="mailto:echobytegames01@gmail.com">Email us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span><img src="images/heart.svg" alt=""> Made with pixels &amp; passion.</span>
+        <span>&copy; <span data-year>2026</span> Echo Byte Games. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
