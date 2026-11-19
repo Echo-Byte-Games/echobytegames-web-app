@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "echobytegames-web-app"
-  }
+    "default": "echo-byte-games",
+    "production": "echo-byte-games"
+  },
+  "targets": {},
+  "etags": {}
 }
