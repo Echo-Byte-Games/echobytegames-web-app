@@ -85,5 +85,6 @@ In the Firebase console, go to **Hosting → Add custom domain** and follow the 
 - **Privacy policy:** the full text lives in `public/privacy.html`.
 - **Colours / fonts:** edit the variables at the top of `public/css/style.css`.
 - **Pixel art:** change the bitmaps in `tools/gen_art.py` and run `python tools/gen_art.py` to rebuild the SVGs in `public/images/`.
+- **app-ads.txt:** edit `public/app-ads.txt`, replacing `pub-0000000000000000` with your real AdMob publisher ID. It is served from the site root, so after deploying it will be available at `https://yourdomain.com/app-ads.txt` (use your actual Firebase Hosting / custom domain). Keep one record per line, e.g. `google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0`.
 
 > Note: the contact form opens the visitor's email app with a pre-filled message (there is no server-side form handler). If you want messages submitted directly to an inbox, connect a service such as Formspree or Firebase Functions/Email Extension later.
